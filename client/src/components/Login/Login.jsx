@@ -1,3 +1,4 @@
+// prettier-ignore-file
 import isEmail from 'validator/lib/isEmail';
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import PropTypes from 'prop-types';
@@ -234,7 +235,12 @@ const Login = React.memo(
           >
             <div className={styles.descriptionWrapperOverlay} />
             <div className={styles.descriptionWrapper}>
-              <Header inverted as="h1" content="Planka" className={styles.descriptionTitle} />
+              <Header
+                inverted
+                as="h1"
+                content="Sapiens Kanban"
+                className={styles.descriptionTitle}
+              />
               <Header
                 inverted
                 as="h2"

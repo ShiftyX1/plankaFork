@@ -1,3 +1,5 @@
+// prettier-ignore-file
+/* eslint-disable */
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -11,6 +13,7 @@ import User from '../User';
 import UserStep from '../UserStep';
 
 import styles from './Header.module.scss';
+import logoSapiens from '../../assets/images/SapiensSolutions.png';
 
 const POPUP_PROPS = {
   position: 'bottom right',
@@ -43,7 +46,7 @@ const Header = React.memo(
       <div className={styles.wrapper}>
         {!project && (
           <Link to={Paths.ROOT} className={classNames(styles.logo, styles.title)}>
-            Planka
+            <img src={logoSapiens} alt="SapiensSolutions Logo" className={styles.logoImage} />
           </Link>
         )}
         <Menu inverted size="large" className={styles.menu}>
